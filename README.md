@@ -36,13 +36,13 @@ This is used in the demonstration of development of Ansible Playbooks.
         # mysql -u <username> -p
         
         mysql> CREATE DATABASE employee_db;
-        mysql> GRANT ALL ON *.* to db_user@'%' IDENTIFIED BY 'Passw0rd';
+        mysql> GRANT ALL ON *.* to db_user@'%' IDENTIFIED BY 'Anaya';
         mysql> USE employee_db;
         mysql> CREATE TABLE employees (name VARCHAR(20));
         
   - Insert some test data
         
-        mysql> INSERT INTO employees VALUES ('JOHN');
+        mysql> INSERT INTO employees VALUES ('Singh');
     
 ## 4. Install and Configure Web Server
 
@@ -64,6 +64,6 @@ Start web server
 
 Open a browser and go to URL
 
-    http://<IP>:5000                            => Welcome
+    http://<IP>:5000                            => Welcome Anaya
     http://<IP>:5000/how%20are%20you            => I am good, how about you?
-    http://<IP>:5000/read%20from%20database     => JOHN
+    http://<IP>:5000/read%20from%20database     => Singh
